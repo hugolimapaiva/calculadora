@@ -10,14 +10,14 @@ export default function App() {
 function addDigit (n) {
  this.setState =  ({ displayValue: n})
 }
-functionClearmemory() {
+function Clearmemory() {
   this.setState = ({ displayValue: '0'})
 }
 setOperation = operation =>{
 
 }
 
-return (
+return(
   <View style = {style.container}>
   <Display value={this.state.displayValue} />
   <View style={styles.button}>
@@ -38,11 +38,11 @@ return (
     <Button label='0' triple onClick={clearMemory} /> 
     <Button label='.' triple onClick={clearMemory} /> 
     <Button label='=' triple onClick={clearMemory} /> 
-
+</View>
+</View>
 )
 
-}
-
+};
 const styles = StyleSheet.create({
   container: {
     flex:1
@@ -51,13 +51,4 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
   }
-}),
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+})
